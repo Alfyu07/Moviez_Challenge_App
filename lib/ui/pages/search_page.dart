@@ -155,20 +155,23 @@ class _SearchPageState extends State<SearchPage> {
       );
 
   Widget suggestButton() => Center(
-        child: Container(
-          margin: const EdgeInsets.only(top: 30, bottom: 32),
-          width: 220,
-          height: 50,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(37),
-            color: primaryColor,
-          ),
-          child: Center(
-            child: Text(
-              "Suggest Movie",
-              style: avenirBook.copyWith(
-                color: whiteColor,
-                fontWeight: FontWeight.w500,
+        child: InkWell(
+          onTap: () {},
+          child: Container(
+            margin: const EdgeInsets.only(top: 30, bottom: 32),
+            width: 220,
+            height: 50,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(37),
+              color: primaryColor,
+            ),
+            child: Center(
+              child: Text(
+                "Suggest Movie",
+                style: avenirBook.copyWith(
+                  color: whiteColor,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
           ),
